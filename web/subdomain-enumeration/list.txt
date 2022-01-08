@@ -1,5 +1,7 @@
 www
 mail
+account
+history
 ftp
 localhost
 webmail
