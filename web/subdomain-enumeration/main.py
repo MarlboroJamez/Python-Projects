@@ -1,7 +1,7 @@
 import requests
 
 # the domain to scan for subdomains
-domain = "google.com"
+domains = 'google.com'
 
 # Open/Read/Split all subdomains
 file = open("list.txt")
@@ -43,7 +43,7 @@ Let's start....
 discovered_subdomains = []
 for subdomain in subdomains:
     # construct the url & checking weather live or not if theres an error, it is passed
-    url = f"http://{subdomain}.{domain}"
+    url = f"http://{subdomain}.{domains}"
     try:
         requests.get(url)
     except requests.ConnectionError:
